@@ -1,0 +1,27 @@
+# Azure DevOps Pipeline for Safa Al Bahar Web Deployment
+trigger:
+  branches:
+    include:
+      - main
+      - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: Deploy
+    displayName: 'Deploy to Azure Static Web Apps'
+    jobs:
+      - job: DeployJob
+        displayName: 'Deploy Job'
+        steps:
+          - checkout: self
+            submodules: true
+
+          - task: AzureStaticWebApp@0
+            displayName: 'Deploy to SWA'
+            inputs:
+              app_location: '/dist'
+              output_location: ''
+              skip_app_build: true
+              azure_static_web_apps_api_token: $(AZURE_STATIC_WEB_APPS_API_TOKEN)

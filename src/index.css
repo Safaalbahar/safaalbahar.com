@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Safa Al Bahar HORECA Theme Colors */
+    --primary: 218 86% 31%; /* #0B3D91 */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 177 83% 26%; /* #0B7A75 */
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 46 65% 52%; /* #D4AF37 */
+    --accent-foreground: 220 50% 28%;
+
+    /* Premium Footer Specific Tokens */
+    --footer-bg-start: 218 86% 31%; /* #0B3D91 */
+    --footer-bg-end: 214 80% 20%;   /* #0A2E5C */
+    --footer-text: 0 0% 100%;       /* #FFFFFF */
+    --footer-gold: 46 65% 52%;      /* #D4AF37 */
+    --footer-green: 177 83% 26%;    /* #0B7A75 */
+    
+    --background: 0 0% 100%;
+    --foreground: 220 13% 20%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 20%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 20%;
+    
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 96%;
+    --ring: 218 86% 31%;
+    
+    --radius: 0.75rem;
+    --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 12px 24px -4px rgba(0, 0, 0, 0.1);
+    --shadow-premium: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --card-hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Typography Scales */
+    --font-size-title: clamp(2rem, 4vw, 3rem);
+    --font-size-subtitle: clamp(1rem, 2vw, 1.125rem);
+    --font-size-button: 1rem;
+    --font-size-page-number: 0.875rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    
+    --card: 215 48% 15%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 215 48% 15%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 218 86% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 177 83% 35%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 46 65% 52%;
+    --accent-foreground: 220 50% 28%;
+    
+    --muted: 215 48% 20%;
+    --muted-foreground: 215 20% 65%;
+    
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 215 48% 20%;
+    --input: 215 48% 20%;
+    --ring: 218 86% 45%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased transition-colors duration-300;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  [dir="rtl"] body,
+  [dir="rtl"] input,
+  [dir="rtl"] textarea,
+  [dir="rtl"] select,
+  [dir="rtl"] button,
+  [dir="rtl"] .headline-hero,
+  [dir="rtl"] .subheadline-hero,
+  [dir="rtl"] .btn-text-hero {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+  }
+
+  [dir="rtl"] { text-align: right; }
+  [dir="ltr"] { text-align: left; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-foreground leading-tight;
+  }
+}
+
+@layer utilities {
+  /* HORECA Hero Typography */
+  .headline-hero {
+    @apply text-[48px] md:text-[56px] lg:text-[72px] font-bold leading-tight;
+  }
+  .subheadline-hero {
+    @apply text-[18px] md:text-[20px] lg:text-[24px] font-normal leading-relaxed;
+  }
+  .btn-text-hero {
+    @apply text-[16px] md:text-[18px] font-bold;
+  }
+
+  /* Footer Specific Utilities */
+  .footer-gradient {
+    background: linear-gradient(135deg, hsl(var(--footer-bg-start)), hsl(var(--footer-bg-end)));
+  }
+  
+  .footer-glossy-overlay {
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .footer-link {
+    @apply text-[14px] md:text-[16px] text-white transition-all duration-300 hover:text-[hsl(var(--footer-gold))] hover:translate-x-1 flex items-center gap-2;
+  }
+  
+  [dir="rtl"] .footer-link:hover {
+    @apply -translate-x-1 translate-x-0;
+  }
+
+  .footer-heading {
+    @apply text-[18px] md:text-[20px] font-bold text-white mb-6 tracking-wide;
+  }
+
+  .footer-icon-btn {
+    @apply text-[hsl(var(--footer-gold))] transition-all duration-300 hover:scale-110 hover:text-white p-2 rounded-full bg-white/5 border border-white/10 hover:bg-[hsl(var(--footer-gold))] hover:border-transparent flex items-center justify-center min-w-[40px] min-h-[40px];
+  }
+
+  /* Glassmorphism */
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl;
+  }
+  .glass-card-dark {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+  
+  /* Gradients */
+  .gradient-blue { background: linear-gradient(135deg, hsl(var(--primary)), #082d5a); }
+  .gradient-green { background: linear-gradient(135deg, hsl(var(--secondary)), #085a56); }
+  .gradient-gold { background: linear-gradient(135deg, hsl(var(--accent)), #b5952f); }
+  
+  .gradient-premium-brand {
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
+  }
+
+  /* Product category gradients */
+  .gradient-bg-primary { background: linear-gradient(135deg, hsl(var(--primary)), #0a2e5c); }
+  .gradient-bg-secondary { background: linear-gradient(135deg, hsl(var(--secondary)), #085a56); }
+  .gradient-bg-accent { background: linear-gradient(135deg, hsl(var(--accent)), #b5952f); }
+
+  /* Hover Lift */
+  .lift-hover {
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .lift-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+  }
+  
+  /* Responsive grid gap utilities */
+  .premium-grid-gap {
+    @apply gap-4 md:gap-6 lg:gap-8;
+  }
+
+  /* RTL specific utilities */
+  [dir="rtl"] .rtl-flip { transform: scaleX(-1); }
+  [dir="rtl"] .ml-auto { margin-right: auto !important; margin-left: 0 !important; }
+  [dir="rtl"] .mr-auto { margin-left: auto !important; margin-right: 0 !important; }
+}
