@@ -175,30 +175,30 @@ const ContactUs = () => {
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-1 md:mb-2">{t('forms.companyName') || 'Company Name'}</label>
-                    <input name="company_name" value={values.company_name} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-input focus:ring-2 focus:ring-[hsl(var(--accent-blue))] bg-white/50 text-foreground transition-all text-base" />
-                    {errors.company_name && <p className="text-destructive text-xs mt-1">{errors.company_name}</p>}
+                    <label className="block text-sm font-semibold text-slate-800 mb-1 md:mb-2">{t('forms.companyName') || 'Company Name'}</label>
+                    <input name="company_name" value={values.company_name} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-slate-300 bg-slate-50 focus:bg-white focus:border-[#0B3D91] focus:ring-2 focus:ring-[#0B3D91]/20 text-slate-900 transition-all text-base font-medium outline-none" />
+                    {errors.company_name && <p className="text-red-500 font-medium text-xs mt-1">{errors.company_name}</p>}
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-1 md:mb-2">{t('forms.contactPerson') || 'Contact Person'}</label>
-                    <input name="contact_person" value={values.contact_person} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-input focus:ring-2 focus:ring-[hsl(var(--accent-blue))] bg-white/50 text-foreground transition-all text-base" />
-                    {errors.contact_person && <p className="text-destructive text-xs mt-1">{errors.contact_person}</p>}
+                    <label className="block text-sm font-semibold text-slate-800 mb-1 md:mb-2">{t('forms.contactPerson') || 'Contact Person'}</label>
+                    <input name="contact_person" value={values.contact_person} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-slate-300 bg-slate-50 focus:bg-white focus:border-[#0B3D91] focus:ring-2 focus:ring-[#0B3D91]/20 text-slate-900 transition-all text-base font-medium outline-none" />
+                    {errors.contact_person && <p className="text-red-500 font-medium text-xs mt-1">{errors.contact_person}</p>}
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-1 md:mb-2">{t('forms.email') || 'Email'}</label>
-                    <input type="email" name="email" value={values.email} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-input focus:ring-2 focus:ring-[hsl(var(--accent-blue))] bg-white/50 text-foreground transition-all text-base" />
-                    {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
+                    <label className="block text-sm font-semibold text-slate-800 mb-1 md:mb-2">{t('forms.email') || 'Email'}</label>
+                    <input type="email" name="email" value={values.email} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-slate-300 bg-slate-50 focus:bg-white focus:border-[#0B3D91] focus:ring-2 focus:ring-[#0B3D91]/20 text-slate-900 transition-all text-base font-medium outline-none" />
+                    {errors.email && <p className="text-red-500 font-medium text-xs mt-1">{errors.email}</p>}
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-1 md:mb-2">{t('forms.phone') || 'Phone'}</label>
-                    <input type="tel" name="phone" value={values.phone} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-input focus:ring-2 focus:ring-[hsl(var(--accent-blue))] bg-white/50 text-foreground transition-all text-base" />
-                    {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
+                    <label className="block text-sm font-semibold text-slate-800 mb-1 md:mb-2">{t('forms.phone') || 'Phone'}</label>
+                    <input type="tel" name="phone" value={values.phone} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-slate-300 bg-slate-50 focus:bg-white focus:border-[#0B3D91] focus:ring-2 focus:ring-[#0B3D91]/20 text-slate-900 transition-all text-base font-medium outline-none" />
+                    {errors.phone && <p className="text-red-500 font-medium text-xs mt-1">{errors.phone}</p>}
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-1 md:mb-2">{t('forms.industryType') || 'Industry'}</label>
+                    <label className="block text-sm font-semibold text-slate-800 mb-1 md:mb-2">{t('forms.industryType') || 'Industry'}</label>
                     <select 
                       name="industry_type" value={values.industry_type} onChange={handleChange} 
-                      className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-input focus:ring-2 focus:ring-[hsl(var(--accent-blue))] bg-white/50 text-foreground transition-all text-base"
+                      className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-slate-300 bg-slate-50 focus:bg-white focus:border-[#0B3D91] focus:ring-2 focus:ring-[#0B3D91]/20 text-slate-900 transition-all text-base font-medium outline-none"
                     >
                       <option value="">{t('forms.selectIndustry') || 'Select'}</option>
                       <option value="HORECA">HORECA</option>
@@ -207,15 +207,15 @@ const ContactUs = () => {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-1 md:mb-2">{t('forms.deliveryLocation') || 'Location'}</label>
-                    <input name="delivery_location" value={values.delivery_location} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-input focus:ring-2 focus:ring-[hsl(var(--accent-blue))] bg-white/50 text-foreground transition-all text-base" />
+                    <label className="block text-sm font-semibold text-slate-800 mb-1 md:mb-2">{t('forms.deliveryLocation') || 'Location'}</label>
+                    <input name="delivery_location" value={values.delivery_location} onChange={handleChange} className="w-full px-4 py-3 md:py-3.5 rounded-xl border border-slate-300 bg-slate-50 focus:bg-white focus:border-[#0B3D91] focus:ring-2 focus:ring-[#0B3D91]/20 text-slate-900 transition-all text-base font-medium outline-none" />
                   </div>
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1 md:mb-2">{t('forms.productsReq') || 'Requirements'}</label>
-                  <input name="products_interested" value={values.products_interested} onChange={handleChange} className="w-full px-4 py-3 mb-4 rounded-xl border border-input focus:ring-2 focus:ring-[hsl(var(--accent-blue))] bg-white/50 text-foreground transition-all text-base" />
-                  <textarea name="special_requirements" value={values.special_requirements} onChange={handleChange} rows="4" className="w-full px-4 py-3 rounded-xl border border-input focus:ring-2 focus:ring-[hsl(var(--accent-blue))] bg-white/50 text-foreground resize-none transition-all text-base" />
+                  <label className="block text-sm font-semibold text-slate-800 mb-1 md:mb-2">{t('forms.productsReq') || 'Requirements'}</label>
+                  <input name="products_interested" value={values.products_interested} onChange={handleChange} placeholder="e.g. Frozen Beef Tenderloin, Chicken Cuts, French Fries" className="w-full px-4 py-3 mb-4 rounded-xl border border-slate-300 bg-slate-50 focus:bg-white focus:border-[#0B3D91] focus:ring-2 focus:ring-[#0B3D91]/20 text-slate-900 transition-all text-base font-medium outline-none" />
+                  <textarea name="special_requirements" value={values.special_requirements} onChange={handleChange} rows="4" placeholder="Any additional notes or delivery schedules..." className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 focus:bg-white focus:border-[#0B3D91] focus:ring-2 focus:ring-[#0B3D91]/20 text-slate-900 resize-none transition-all text-base font-medium outline-none" />
                 </div>
 
                 <motion.button 

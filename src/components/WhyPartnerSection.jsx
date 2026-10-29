@@ -35,7 +35,7 @@ const WhyPartnerSection = () => {
                 "Customer-focused service approach"
               ].map((benefit, idx) => (
                 <li key={idx} className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-[hsl(var(--secondary))]"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-amber-400 shrink-0"></div>
                   <span className="font-medium text-white/95">{benefit}</span>
                 </li>
               ))}
@@ -52,7 +52,7 @@ const WhyPartnerSection = () => {
                 transition={{ delay: idx * 0.1 }}
                 className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl text-center hover-lift"
               >
-                <div className="inline-flex p-3 rounded-xl bg-[hsl(var(--secondary))] text-[hsl(var(--primary))] mb-4">
+                <div className="inline-flex p-3 rounded-xl bg-amber-400 text-slate-950 mb-4 shadow-md font-bold">
                   <stat.icon size={28} />
                 </div>
                 <div className="text-3xl font-black text-white mb-2">

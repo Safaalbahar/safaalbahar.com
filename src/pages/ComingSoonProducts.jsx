@@ -17,7 +17,7 @@ const ComingSoonProducts = () => {
     "Frozen Storage -18°C"
   ];
 
-  const imageUrl = "https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/2255f01a730e49fc0656c349d6ced932.jpg";
+  const imageUrl = "https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=1200&q=85";
   const whatsappLink = "https://wa.me/966559977206?text=Hello%20SAFA%20AL%20BAHAR,%20I%20would%20like%20to%20get%20updates%20on%20the%20Frozen%20Mango%20Pulp%20launch";
 
   return (

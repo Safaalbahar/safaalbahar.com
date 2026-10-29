@@ -43,13 +43,14 @@ const StrengthsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="glass-card bg-white p-6 rounded-2xl hover-lift border border-gray-100 flex items-start gap-4"
+              className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-amber-400/50 transition-all duration-300 flex items-start gap-4 group"
             >
-              <div className="bg-[hsl(var(--primary))] text-[hsl(var(--secondary))] p-3 rounded-xl shrink-0">
+              <div className="bg-[#0b1e36] text-amber-400 p-3.5 rounded-xl shrink-0 group-hover:scale-110 group-hover:bg-[#002f6c] transition-all duration-300 shadow-sm">
                 <item.icon size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 leading-tight">{item.title}</h3>
+                <h3 className="font-bold text-slate-900 text-base md:text-lg leading-tight mb-1 group-hover:text-[#0B3D91] transition-colors">{item.title}</h3>
+                <p className="text-xs text-slate-500 font-medium">Enterprise Supply Standard</p>
               </div>
             </motion.div>
           ))}

@@ -60,17 +60,52 @@ const LogisticsCoverage = () => {
             </p>
           </motion.div>
 
-          <div className="bg-gray-100 rounded-2xl p-6 md:p-12 mb-12">
-            <div className="flex items-center justify-center bg-white rounded-xl border-2 border-dashed border-gray-300 p-4 md:p-8 overflow-hidden group min-h-[300px] md:min-h-[500px]">
-              <motion.img 
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                src="https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/597a26cee0ba2d7d44efa2bdde83c4aa.png" 
-                alt="Saudi Arabia Logistics Coverage Map"
-                className="max-w-full max-h-[450px] object-contain transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-              />
+          <div className="bg-gradient-to-br from-[#001F3F] to-[#003366] rounded-3xl p-6 md:p-12 mb-12 shadow-2xl overflow-hidden relative text-white">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(251,191,36,0.15),transparent_50%)]"></div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+              <div className="lg:col-span-7 rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+                <motion.img 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80" 
+                  alt="Safa Al Bahar Modern Cold Chain Logistics and Warehousing Facility"
+                  className="w-full h-[320px] md:h-[420px] object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              </div>
+
+              <div className="lg:col-span-5 space-y-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-400/20 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-wider">
+                  <Snowflake className="w-3.5 h-3.5" />
+                  Active Temperature Telemetry
+                </div>
+                <h3 className="text-2xl md:text-3xl font-extrabold text-white leading-tight">
+                  Kingdom-Wide Cold Chain Infrastructure
+                </h3>
+                <p className="text-white/80 leading-relaxed text-sm md:text-base">
+                  Our dedicated fleet of dual-compartment refrigerated vehicles maintains strict thermal integrity (-18°C frozen to +4°C chilled) from customs release to your kitchen doors.
+                </p>
+
+                <div className="grid grid-cols-2 gap-4 pt-2">
+                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/15">
+                    <p className="text-2xl font-black text-amber-400">100%</p>
+                    <p className="text-xs text-white/80 font-medium">SFDA Certified Cold Chain</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/15">
+                    <p className="text-2xl font-black text-amber-400">24/7</p>
+                    <p className="text-xs text-white/80 font-medium">IoT Thermal Monitoring</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/15">
+                    <p className="text-2xl font-black text-amber-400">&lt; 24h</p>
+                    <p className="text-xs text-white/80 font-medium">Western Province Express</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/15">
+                    <p className="text-2xl font-black text-amber-400">3 Hubs</p>
+                    <p className="text-xs text-white/80 font-medium">Jeddah, Madinah, Yanbu</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

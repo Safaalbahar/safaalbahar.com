@@ -42,15 +42,15 @@ const SaudiArabiaMapSection = () => {
                 transition={{ delay: loc.delay, type: "spring", stiffness: 120 }}
               >
                 <div className="relative">
-                  <div className="absolute -inset-2 bg-[hsl(var(--secondary))] rounded-full opacity-20 animate-ping"></div>
-                  <div className="relative w-8 h-8 bg-[hsl(var(--primary))] rounded-full flex items-center justify-center text-[hsl(var(--secondary))] shadow-lg border-2 border-white group-hover:scale-110 transition-transform">
-                    <MapPin size={16} />
+                  <div className="absolute -inset-2 bg-amber-400 rounded-full opacity-30 animate-ping"></div>
+                  <div className="relative w-9 h-9 bg-[#0b1e36] rounded-full flex items-center justify-center text-amber-400 shadow-xl border-2 border-amber-400 group-hover:scale-110 transition-transform">
+                    <MapPin size={18} />
                   </div>
                 </div>
                 
-                <div className="mt-2 bg-white px-3 py-1.5 rounded-lg shadow-md border border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-center absolute top-full pointer-events-none z-20">
-                  <p className="font-bold text-[hsl(var(--primary))] text-sm">{loc.name}</p>
-                  <p className="text-xs text-gray-500">{loc.role}</p>
+                <div className="mt-2 bg-[#0b1e36]/95 backdrop-blur-md px-3 py-1 rounded-lg shadow-lg border border-amber-400/30 whitespace-nowrap text-center transition-all duration-300 group-hover:scale-105">
+                  <p className="font-bold text-white text-xs">{loc.name}</p>
+                  <p className="text-[10px] text-amber-300 font-medium">{loc.role}</p>
                 </div>
               </motion.div>
             ))}

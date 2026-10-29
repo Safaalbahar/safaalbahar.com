@@ -200,8 +200,6 @@ const QualityCompliance = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 };

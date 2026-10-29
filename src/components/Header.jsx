@@ -57,10 +57,10 @@ const Header = () => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg md:text-xl font-black tracking-wide leading-tight text-[hsl(var(--text-primary))] group-hover:text-[hsl(var(--gold-accent))] transition-colors duration-300">
+              <span className="text-lg md:text-xl font-black tracking-wide leading-tight text-white group-hover:text-amber-400 transition-colors duration-300">
                 {isArabic ? "صفا البحر" : "Safa Al Bahar"}
               </span>
-              <span className="text-[9px] md:text-[10px] text-white/80 font-bold tracking-widest uppercase hidden sm:block">
+              <span className="text-[9px] md:text-[10px] text-amber-400/90 font-bold tracking-widest uppercase hidden sm:block">
                 {t('common.tradingCompany') || "Trading Company"}
               </span>
             </div>
@@ -75,7 +75,7 @@ const Header = () => {
                     <Link
                       to={item.path}
                       className={`text-sm font-bold flex items-center gap-2 py-2 transition-colors duration-300 ease-in-out ${
-                        isActive ? 'text-[hsl(var(--gold-accent))]' : 'text-[hsl(var(--text-primary))] hover:text-[hsl(var(--gold-accent))]'
+                        isActive ? 'text-amber-400' : 'text-white/90 hover:text-amber-400'
                       }`}
                     >
                       <item.icon className="w-4 h-4 transition-colors duration-300 currentColor" />
@@ -88,11 +88,11 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-3 md:gap-4 flex-shrink-0">
-            <LanguageSwitcher className="hidden sm:flex hover:bg-white/20 transition-all duration-300 border-white/20" />
+            <LanguageSwitcher className="hidden sm:flex hover:bg-white/20 transition-all duration-300 border-white/20 text-white" />
 
             <button
               onClick={() => setIsCartOpen(true)}
-              className="relative p-2 text-[hsl(var(--text-primary))] hover:text-[hsl(var(--gold-accent))] transition-colors duration-300 focus:outline-none"
+              className="relative p-2 text-white hover:text-amber-400 transition-colors duration-300 focus:outline-none"
               aria-label="Open Cart"
             >
               <ShoppingBag className="w-6 h-6" />
@@ -107,7 +107,7 @@ const Header = () => {
               href="https://wa.me/966559977206"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden lg:flex bg-[hsl(var(--gold-accent))] text-[hsl(var(--gradient-start))] px-6 py-2.5 rounded-xl font-bold text-sm items-center gap-2 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_4px_15px_hsl(var(--gold-accent)/0.4)] min-h-[44px]"
+              className="hidden lg:flex bg-amber-400 text-slate-950 px-6 py-2.5 rounded-xl font-bold text-sm items-center gap-2 transition-all duration-300 hover:bg-amber-300 hover:-translate-y-0.5 hover:shadow-[0_4px_15px_rgba(251,191,36,0.4)] min-h-[44px]"
             >
               <MessageCircle className="w-4 h-4" />
               <span>{t('common.chatNow') || "Chat Now"}</span>
@@ -115,7 +115,7 @@ const Header = () => {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="xl:hidden text-[hsl(var(--text-primary))] hover:text-[hsl(var(--gold-accent))] p-2 rounded-md transition-colors duration-300 flex items-center justify-center focus:outline-none"
+              className="xl:hidden text-white hover:text-amber-400 p-2 rounded-md transition-colors duration-300 flex items-center justify-center focus:outline-none"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
@@ -133,10 +133,10 @@ const Header = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="xl:hidden absolute w-full left-0 top-full shadow-[var(--shadow-premium)] overflow-hidden"
           >
-            <div className="absolute inset-0 gradient-premium-brand opacity-98 backdrop-blur-md -z-10 border-t border-white/10"></div>
+            <div className="absolute inset-0 bg-[#071f3d] opacity-98 backdrop-blur-md -z-10 border-t border-white/10"></div>
             <div className="px-4 py-4 flex flex-col gap-1 max-h-[80vh] overflow-y-auto relative z-10">
               <div className="flex justify-end mb-2 px-4 sm:hidden">
-                <LanguageSwitcher className="border-white/20" />
+                <LanguageSwitcher className="border-white/20 text-white" />
               </div>
               {navLinks.map((item, idx) => {
                 const isActive = location.pathname === item.path;
@@ -146,8 +146,8 @@ const Header = () => {
                     to={item.path}
                     className={`text-base font-bold px-4 py-3.5 rounded-xl transition-all duration-300 min-h-[44px] flex items-center gap-3 ${
                       isActive 
-                        ? 'bg-white/10 text-[hsl(var(--gold-accent))] border-l-4 border-[hsl(var(--gold-accent))]' 
-                        : 'text-[hsl(var(--text-primary))] hover:bg-white/5 hover:text-[hsl(var(--gold-accent))]'
+                        ? 'bg-white/10 text-amber-400 border-l-4 border-amber-400' 
+                        : 'text-white/90 hover:bg-white/5 hover:text-amber-400'
                     }`}
                     style={isArabic && isActive ? { borderRightWidth: '4px', borderLeftWidth: '0' } : {}}
                   >
@@ -161,7 +161,7 @@ const Header = () => {
                   href="https://wa.me/966559977206"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[hsl(var(--gold-accent))] text-[hsl(var(--gradient-start))] w-full py-4 rounded-xl font-bold text-base flex items-center justify-center gap-2 shadow-[0_4px_15px_hsl(var(--gold-accent)/0.3)] transition-all duration-300 hover:shadow-[0_4px_20px_hsl(var(--gold-accent)/0.5)]"
+                  className="bg-amber-400 text-slate-950 w-full py-4 rounded-xl font-bold text-base flex items-center justify-center gap-2 shadow-[0_4px_15px_rgba(251,191,36,0.3)] transition-all duration-300 hover:bg-amber-300"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span>{t('common.whatsappInquiry') || "WhatsApp Inquiry"}</span>

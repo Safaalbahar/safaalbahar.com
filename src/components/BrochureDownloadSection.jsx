@@ -22,14 +22,14 @@ const BrochureDownloadSection = () => {
             <div className="lg:w-1/2 flex flex-col justify-center">
               <motion.div
                 whileHover={{ y: -5 }}
-                className="relative mx-auto w-full max-w-[340px] mb-8 lg:mb-12 shadow-2xl rounded-sm border border-gray-200"
+                className="relative mx-auto w-full max-w-[340px] mb-8 lg:mb-12 shadow-2xl rounded-xl border border-gray-200 overflow-hidden"
               >
                 <img 
-                  src="https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/768a77c5d710ccd81a9b5e96723621ff.png" 
-                  alt="Safa Al Bahar Trading Company facility showing warehouse building with delivery trucks, logistics hub, and company branding" 
-                  className="w-full h-auto object-cover rounded-sm" 
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" 
+                  alt="Safa Al Bahar Trading Company Cold Storage and Logistics Headquarters" 
+                  className="w-full h-auto object-cover rounded-xl" 
                 />
-                <div className="absolute top-4 right-[-10px] bg-[#0B2C4D] text-white text-xs font-bold px-3 py-1.5 rounded shadow-md">
+                <div className="absolute top-4 right-[-10px] bg-[#0B2C4D] text-amber-400 text-xs font-bold px-3 py-1.5 rounded shadow-md border border-amber-400/30">
                   2026 Official Edition
                 </div>
               </motion.div>

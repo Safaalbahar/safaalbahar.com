@@ -53,16 +53,16 @@ const DistributionPartnerPage = () => {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <button onClick={scrollToForm} className="bg-[hsl(var(--secondary))] text-[hsl(var(--primary))] hover:bg-white font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-3 transition-colors shadow-lg group">
-                <Handshake className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <button onClick={scrollToForm} className="bg-amber-400 text-slate-950 hover:bg-amber-300 font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-3 transition-all duration-300 shadow-xl group">
+                <Handshake className="w-5 h-5 group-hover:scale-110 transition-transform text-slate-950" />
                 Become Our Partner
               </button>
-              <a href="mailto:sales@safaalbahar.com" className="glass-effect text-white hover:bg-white/20 font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-3 transition-colors border border-white/30 group">
-                <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <a href="mailto:sales@safaalbahar.com" className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-3 transition-colors border border-white/30 group backdrop-blur-sm">
+                <Mail className="w-5 h-5 group-hover:scale-110 transition-transform text-amber-400" />
                 Email Business Dev
               </a>
-              <button onClick={scrollToForm} className="glass-effect text-white hover:bg-white/20 font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-3 transition-colors border border-white/30 group">
-                <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <button onClick={scrollToForm} className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-3 transition-colors border border-white/30 group backdrop-blur-sm">
+                <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform text-amber-400" />
                 Schedule a Meeting
               </button>
               <a 
@@ -70,9 +70,9 @@ const DistributionPartnerPage = () => {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 download
-                className="glass-effect text-white hover:bg-white/20 font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-3 transition-colors border border-white/30 group"
+                className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-3 transition-colors border border-white/30 group backdrop-blur-sm"
               >
-                <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <Download className="w-5 h-5 group-hover:scale-110 transition-transform text-amber-400" />
                 Company Profile (PDF)
               </a>
             </div>

@@ -33,8 +33,8 @@ const MenuPreview = React.forwardRef((props, ref) => {
         } : {}} transition={{
           duration: 0.8
         }} className="order-2 md:order-1">
-            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
-              <img className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Artistic plated dessert" src="https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/nima-naseri-hxoqzxezzmi-unsplash-TOrf6.jpg" />
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+              <img className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Safa Al Bahar Premium Food Portfolio" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85" />
             </div>
           </motion.div>
 
@@ -48,17 +48,19 @@ const MenuPreview = React.forwardRef((props, ref) => {
           duration: 0.8,
           delay: 0.2
         }} className="order-1 md:order-2">
-            <span className="text-[#8B7355] text-sm tracking-[0.2em] uppercase mb-4 block">
-              Our Menu
+            <span className="text-amber-600 font-bold text-sm tracking-[0.2em] uppercase mb-4 block">
+              Premium Food Service
             </span>
-            <h2 className="text-4xl md:text-5xl font-light text-[#6B5D4F] mb-6 leading-tight">
-              A Fresh and
+            <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B2C4D] mb-6 leading-tight">
+              Certified Global
               <br />
-              Seasonal Cuisine
+              Food Categories
             </h2>
-            <p className="text-[#6B5D4F]/80 leading-relaxed mb-8">We serve only exceptional hand-picked ingredients, found fresh every morning at the local farmers' market.</p>
-            <Button onClick={() => navigate(ROUTES.products)} className="bg-[#8B7355] hover:bg-[#6B5D4F] text-white px-8">
-              View Full Menu
+            <p className="text-slate-600 leading-relaxed mb-8">
+              We supply top-tier international brands and directly imported meats, seafood, poultry, french fries, and essential dry goods to the Kingdom's leading hospitality leaders.
+            </p>
+            <Button onClick={() => navigate(ROUTES.products)} className="bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-8 py-3 rounded-xl shadow-lg">
+              Explore Products
             </Button>
           </motion.div>
         </div>

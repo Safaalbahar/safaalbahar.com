@@ -8,7 +8,7 @@ const LocalBusinessSchema = () => {
     "name": "Safa Al Bahar Trading Company",
     "description": "Premium Food Supplier and HORECA Distributor across Saudi Arabia.",
     "url": "https://safaalbahar.com",
-    "logo": "https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/c0c342fad8588e4b0eeab0e8007c9bc2.png",
+    "logo": "https://safaalbahar.com/assets/safa-logo.jpg",
     "telephone": "+966559977206",
     "email": "sales@safaalbahar.com",
     "sameAs": [

@@ -10,7 +10,7 @@ const featuredProducts = [
     packSize: '2.5kg',
     badge: 'FROZEN',
     categoryId: 'french-fries',
-    image: 'https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/b47c745b86f7057dd9a9903537c5b4e8.jpg',
+    image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80',
     alt: 'McCain Our Original Choice Crinkle Fries 2.5kg package'
   },
   {
@@ -19,7 +19,7 @@ const featuredProducts = [
     packSize: '2kg Family Pack',
     badge: 'FROZEN',
     categoryId: 'frozen-chicken',
-    image: 'https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/e71ec3c09df3275a536afaeaf323177c.jpg',
+    image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=800&q=80',
     alt: 'Sadia Tender Chicken Breasts 2kg Family Pack'
   },
   {
@@ -28,7 +28,7 @@ const featuredProducts = [
     packSize: '20x400gm',
     badge: 'FROZEN',
     categoryId: 'frozen-vegetables',
-    image: 'https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/8687f6d5c309f10c24b71895e691e4e7.jpg',
+    image: 'https://images.unsplash.com/photo-1592394533824-9440e5d68530?auto=format&fit=crop&w=800&q=80',
     alt: 'Safa Al Bahar Green Peas Al Bustan'
   },
   {
@@ -37,7 +37,7 @@ const featuredProducts = [
     packSize: '8kg (20x400gm)',
     badge: 'FROZEN',
     categoryId: 'frozen-vegetables',
-    image: 'https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/c5fdd9f93af7c02a3780297aa76f994d.jpg',
+    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=800&q=80',
     alt: 'Safa Al Bahar Sweet Corn Golden Fresh Americana'
   },
   {
@@ -46,7 +46,7 @@ const featuredProducts = [
     packSize: '16x1kg',
     badge: 'FROZEN',
     categoryId: 'frozen-fruits',
-    image: 'https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/a5ef722c16aadf062fd1583c30bb7d28.jpg',
+    image: 'https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=800&q=80',
     alt: 'Safa Al Bahar Mango Pulp Farm Fresh Totapuri'
   }
 ];

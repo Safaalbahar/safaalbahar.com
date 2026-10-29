@@ -16,6 +16,14 @@
     --accent: 46 65% 52%; /* #D4AF37 */
     --accent-foreground: 220 50% 28%;
 
+    /* Aliases for global accent consistency */
+    --gold: 46 65% 52%;
+    --gold-accent: 46 65% 52%;
+    --accent-gold: 46 65% 52%;
+    --accent-blue: 214 80% 45%;
+    --text-primary: 220 13% 20%;
+    --gradient-start: 218 86% 31%;
+
     /* Premium Footer Specific Tokens */
     --footer-bg-start: 218 86% 31%; /* #0B3D91 */
     --footer-bg-end: 214 80% 20%;   /* #0A2E5C */
@@ -74,6 +82,13 @@
     
     --accent: 46 65% 52%;
     --accent-foreground: 220 50% 28%;
+
+    --gold: 46 65% 52%;
+    --gold-accent: 46 65% 52%;
+    --accent-gold: 46 65% 52%;
+    --accent-blue: 214 80% 55%;
+    --text-primary: 210 40% 98%;
+    --gradient-start: 218 86% 25%;
     
     --muted: 215 48% 20%;
     --muted-foreground: 215 20% 65%;

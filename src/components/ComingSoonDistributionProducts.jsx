@@ -12,37 +12,37 @@ const ComingSoonDistributionProducts = () => {
       id: 1,
       name: "Allana Frozen Totapuri Mango Pulp",
       nameAr: "لب مانجو توتابوري مجمد من ألانا",
-      image: "https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/80cd6f4de6c46ae42a37af1d93c16825.jpg"
+      image: "https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
       name: "Jain FarmFresh Frozen Totapuri Mango Pulp",
       nameAr: "لب مانجو توتابوري مجمد من جاين فارم فريش",
-      image: "https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/ca2168e775ebc7d9020e46dc1009cc8d.jpg"
+      image: "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
       name: "Barzan Malabar Paratha",
       nameAr: "برزان براتا ملبار",
-      image: "https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/2d0ae1883c5a9f5e46dc2f08c235ad7c.jpg"
+      image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 4,
       name: "McCain Crispy French Fries",
       nameAr: "بطاطس مقلية مقرمشة من ماكين",
-      image: "https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/d40b703fc50fca1e6c36ba3e3cbcde60.jpg"
+      image: "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 5,
       name: "Seara Chicken Strips",
       nameAr: "شرائح دجاج سيارا",
-      image: "https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/2d005a3734bd076e98c21a44c36a7b1b.jpg"
+      image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 6,
       name: "OHH! Potato French Fries",
       nameAr: "بطاطس مقلية أوه!",
-      image: "https://horizons-cdn.hostinger.com/d2677b40-5d8b-4ef8-a357-74d10e76c4f8/72d5aef9180b37ab3a4876abd18c000f.jpg"
+      image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=80"
     }
   ];
 
